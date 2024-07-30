@@ -9,9 +9,10 @@ Zombie::Zombie(std::string name) : name(name)
 {
 }
 
+//destructor is called when the object is destroyed
 Zombie::~Zombie()
 {
-	std::cout << name << " has been destroyed." << std::endl;
+	std::cout << name << " is destroyed" << std::endl;
 }
 
 void Zombie::announce() const
