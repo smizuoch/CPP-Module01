@@ -2,17 +2,17 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-TARGET = a.out
+NAME = a.out
 
 SRC = main.cpp
 
-all: $(TARGET)
+all: $(NAME)
 
-$(TARGET): $(SRC)
+$(NAME): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(NAME)
 
 fclean: clean
 
