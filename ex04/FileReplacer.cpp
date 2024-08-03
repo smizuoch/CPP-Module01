@@ -24,6 +24,13 @@ bool FileReplacer::replaceContent()
 	}
 
 	std::string line;
+
+	if (s1.empty())
+	{
+		std::cerr << "Error: Empty string to search for." << std::endl;
+		return false;
+	}
+
 	while (std::getline(inputFile, line))
 	{
 		outputFile << replaceInLine(line) << std::endl;
